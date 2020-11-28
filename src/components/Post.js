@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from '../styles/posts.scss';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 // icon image is found under reddit.com/:subreddit/about.json
 
@@ -8,7 +10,7 @@ export const Post = () => {
       <div className="post-container">
         <div className="subreddit-author-container">
             <div className="subreddit-thumbnail">
-                <img src="https://b.thumbs.redditmedia.com/lh3XYdayDnfF474A_Ro9fBWUViOibSr4BoTpx0ETyvg.png" />
+                <img src="https://b.thumbs.redditmedia.com/lh3XYdayDnfF474A_Ro9fBWUViOibSr4BoTpx0ETyvg.png" alt="sub-icon" />
             </div>
             <div className="subreddit-author">
                 <p>r/nba</p>
@@ -21,7 +23,14 @@ export const Post = () => {
             </div>
         </div>
         <div className="votes-container">
-
+            <div className="upvotes">
+                <FontAwesomeIcon icon={faArrowUp} />
+                <span>11.3k</span>
+            </div>
+            <div classNAme="downvotes">
+                <FontAwesomeIcon icon={faArrowDown} />
+                <span>1k</span>
+            </div>
         </div>
       </div>
   )

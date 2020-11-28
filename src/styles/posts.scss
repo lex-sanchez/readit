@@ -7,9 +7,23 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .title-container {
+}
+
+.votes-container {
+  display: flex;
+  margin: 0 0 10px 15px;
+
+  div {
+    margin: 10px 10px 0 0;
+  }
+
+  span {
+    margin-left: 5px;
+  }
 }
 
 .title {
@@ -29,7 +43,7 @@
 }
 
 .subreddit-thumbnail {
-  margin: 25px 5px 25px 25px;
+  margin: 25px 5px 25px 15px;
   img {
     border-radius: 100%;
     height: 40px;

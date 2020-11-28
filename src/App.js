@@ -23,7 +23,7 @@ class App extends React.Component {
                 </div>
                 <div className="posts-container">
                     <div className="posts">
-                        <Post />
+                        {this.state.apiResponse.map(post => (<Post />))}
                     </div>
                 </div>
             </div>
